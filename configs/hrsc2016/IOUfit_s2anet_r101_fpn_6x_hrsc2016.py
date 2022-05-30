@@ -34,14 +34,14 @@ model = dict(
             gamma=2.0,
             alpha=0.25,
             loss_weight=1.0),
-        loss_fam_bbox=dict(type='FitIoULoss', loss_weight=0.4),
+        loss_fam_bbox=dict(type='FitIoULoss', loss_weight=0.5),
         loss_odm_cls=dict(
             type='FocalLoss',
             use_sigmoid=True,
             gamma=2.0,
             alpha=0.25,
             loss_weight=1.0),
-        loss_odm_bbox=dict(type='FitIoULoss', loss_weight=0.4)))
+        loss_odm_bbox=dict(type='FitIoULoss', loss_weight=0.5)))
 # training and testing settings
 train_cfg = dict(
     fam_cfg=dict(
